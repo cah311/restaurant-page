@@ -1,3 +1,55 @@
 .hello {
     color: red;
 }
+
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid black;
+
+}
+
+#nav-bar {
+    display: table;
+
+
+    border: 1px solid pink;
+
+}
+
+#tab-list {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin: 2rem auto 0 auto;
+
+    justify-content: space-evenly;
+
+
+
+    list-style-type: none;
+
+    border: 1px solid green;
+}
+
+.page-tab {
+    display: inline;
+    width: 5.5rem;
+    height: 3.5rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    
+    border: 1px solid purple;
+
+}
+
+/* .page-tab-button {
+    padding: 1.5rem 2.5rem;
+} */
+
+#page-content {
+    border: 2px solid orange;
+}
