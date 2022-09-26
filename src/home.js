@@ -1,7 +1,7 @@
 import _ from "lodash";
-import "./style.css";
+import "../styles/style.css";
 import "./index";
-import Logo from "./logo.png";
+import Logo from "../styles/logo.png";
 
 function homePage() {
   const pageContent = document.getElementById("page-content");

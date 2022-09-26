@@ -1,6 +1,6 @@
 import _ from "lodash";
-import "./style.css";
-import Logo from "./logo.png";
+import "../styles/style.css";
+import Logo from "../styles/logo.png";
 import homePage from "./home";
 import menuPage from "./menu";
 import contactPage from "./contact";
@@ -26,6 +26,11 @@ const content = document.getElementById("content");
 function createPageTabs() {
   const header = document.createElement("header");
   header.setAttribute("id", "header");
+  const logoContainer = document.createElement("div");
+  logoContainer.setAttribute("id", "logo-container");
+  const logo = new Image();
+  logo.src = Logo;
+  logo.setAttribute("id", "header-logo");
   const navBar = document.createElement("nav");
   navBar.setAttribute("id", "nav-bar");
   navBar.setAttribute("class", "table");
@@ -53,6 +58,8 @@ function createPageTabs() {
   pageContent.setAttribute("id", "page-content");
 
   content.append(header);
+  header.append(logoContainer);
+  logoContainer.append(logo);
   header.append(navBar);
   navBar.append(tabList);
   tabList.append(tab1, tab2, tab3);
