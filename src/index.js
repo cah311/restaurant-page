@@ -1,6 +1,8 @@
 import _ from "lodash";
 import "./style.css";
 import Logo from "./logo.png";
+import homePage from "./home";
+import menuPage from "./menu";
 
 // function component() {
 //   const element = document.createElement("div");
@@ -29,10 +31,15 @@ function createPageTabs() {
   const tabList = document.createElement("ul");
   tabList.setAttribute("id", "tab-list");
   const tab1 = document.createElement("li");
+  tab1.setAttribute("id", "home-tab");
   tab1.setAttribute("class", "page-tab");
   const tab2 = document.createElement("li");
+  tab2.setAttribute("id", "menu-tab");
+
   tab2.setAttribute("class", "page-tab");
   const tab3 = document.createElement("li");
+  tab3.setAttribute("id", "contact-tab");
+
   tab3.setAttribute("class", "page-tab");
   // const button1 = document.createElement("button");
   // button1.setAttribute("class", "page-tab-button");
@@ -41,7 +48,7 @@ function createPageTabs() {
   // const button3 = document.createElement("button");
   // button3.setAttribute("class", "page-tab-button");
 
-  const pageContent = document.createElement("div");
+  let pageContent = document.createElement("div");
   pageContent.setAttribute("id", "page-content");
 
   content.append(header);
@@ -68,8 +75,28 @@ function createPageTabs() {
   };
 }
 
-content.appendChild(createPageTabs());
+//content.append(createPageTabs());
+createPageTabs();
 
-function createPageLayout() {}
+function clearPage() {
+  let currentPageContent = document.getElementById("page-content");
+  currentPageContent.innerHTML = "";
 
-content.append(createPageLayout());
+  console.log("page cleared");
+}
+
+document.querySelector("#home-tab").addEventListener("click", () => {
+  clearPage();
+  homePage();
+  console.log("index is working");
+});
+
+document.querySelector("#menu-tab").addEventListener("click", () => {
+  clearPage();
+  menuPage();
+  console.log("index is working");
+});
+
+// function createPageLayout() {}
+
+// content.append(createPageLayout());
