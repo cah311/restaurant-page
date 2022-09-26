@@ -3,6 +3,7 @@ import "./style.css";
 import Logo from "./logo.png";
 import homePage from "./home";
 import menuPage from "./menu";
+import contactPage from "./contact";
 
 // function component() {
 //   const element = document.createElement("div");
@@ -75,8 +76,12 @@ function createPageTabs() {
   };
 }
 
-//content.append(createPageTabs());
 createPageTabs();
+
+// tab functions
+
+//// on start up
+homePage();
 
 function clearPage() {
   let currentPageContent = document.getElementById("page-content");
@@ -97,6 +102,8 @@ document.querySelector("#menu-tab").addEventListener("click", () => {
   console.log("index is working");
 });
 
-// function createPageLayout() {}
-
-// content.append(createPageLayout());
+document.querySelector("#contact-tab").addEventListener("click", () => {
+  clearPage();
+  contactPage();
+  console.log("index is working");
+});
