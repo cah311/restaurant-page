@@ -4,6 +4,7 @@
     --brown: #493037;
 }
 
+/* index css */
 #header {
     display: flex;
     flex-direction: column;
@@ -68,10 +69,6 @@
 
 }
 
-/* .page-tab-button {
-    padding: 1.5rem 2.5rem;
-} */
-
 #page-content {
     border: 2px solid orange;
     margin: auto;
@@ -79,3 +76,23 @@
     height: 80vh;
     width: 90%;
 }
+
+/* home page */
+#home-logo-contatiner {}
+
+#home-picture {
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* global syling */
+.long-logo {}
+
+.image-container {
+    height: 40vh;
+}
+
+.text-container {}
+
+.text {}

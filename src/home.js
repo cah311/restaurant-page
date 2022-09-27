@@ -7,14 +7,14 @@ import pie from "../styles/assets/applePie.png";
 function homePage() {
   const pageContent = document.getElementById("page-content");
   const logoContainer = document.createElement("div");
-  logoContainer.setAttribute("id", "long-logo-container");
+  logoContainer.setAttribute("id", "home-logo-container");
 
   const longLogo = new Image();
   longLogo.src = Logo;
   longLogo.setAttribute("class", "long-logo");
 
   const descriptionContainer = document.createElement("div");
-  descriptionContainer.setAttribute("class", "container");
+  descriptionContainer.setAttribute("class", "text-container");
 
   const description = document.createElement("p");
   description.setAttribute("class", "text");
@@ -22,7 +22,7 @@ function homePage() {
     "Welcome to P's Pantry. Home of Preston's famous apple pie. Stop by for freshly baked goods, and delicious treats!";
 
   const pictureContainer = document.createElement("div");
-  pictureContainer.setAttribute("class", "container");
+  pictureContainer.setAttribute("class", "image-container");
   const picture = new Image();
   picture.src = pie;
   picture.setAttribute("id", "home-picture");
