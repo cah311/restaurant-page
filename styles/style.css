@@ -73,8 +73,9 @@
     border: 2px solid orange;
     margin: auto;
     margin-bottom: 5%;
-    height: 80vh;
-    width: 90%;
+    /* height: 80vh;
+    width: 90%; */
+    overflow: auto;
 }
 
 /* home page */
@@ -84,6 +85,10 @@
     height: 100%;
     object-fit: contain;
 }
+
+#hours-list {}
+
+.day-times{}
 
 
 /* global syling */
