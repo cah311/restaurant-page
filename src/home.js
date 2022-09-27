@@ -1,25 +1,40 @@
 import _ from "lodash";
 import "../styles/style.css";
 import "./index";
-import Logo from "../styles/logo.png";
+import Logo from "../styles/assets/logo2.png";
+import pie from "../styles/assets/applePie.png";
 
 function homePage() {
   const pageContent = document.getElementById("page-content");
-  const element = document.createElement("div");
-  console.log(pageContent);
+  const logoContainer = document.createElement("div");
+  logoContainer.setAttribute("id", "long-logo-container");
 
-  //   element.innerHTML = _.join(["Hello", "webpack"], "");
-  //   element.classList.add("hello");
+  const longLogo = new Image();
+  longLogo.src = Logo;
+  longLogo.setAttribute("class", "long-logo");
 
-  console.log("home tab is working");
+  const descriptionContainer = document.createElement("div");
+  descriptionContainer.setAttribute("class", "container");
 
-  const myLogo = new Image();
-  myLogo.src = Logo;
+  const description = document.createElement("p");
+  description.setAttribute("class", "text");
+  description.innerHTML =
+    "Welcome to P's Pantry. Home of Preston's famous apple pie. Stop by for freshly baked goods, and delicious treats!";
 
-  element.append(myLogo);
+  const pictureContainer = document.createElement("div");
+  pictureContainer.setAttribute("class", "container");
+  const picture = new Image();
+  picture.src = pie;
+  picture.setAttribute("id", "home-picture");
 
-  pageContent.appendChild(element);
-  return element;
+  logoContainer.append(longLogo);
+  pageContent.appendChild(logoContainer);
+  pageContent.appendChild(descriptionContainer);
+  descriptionContainer.appendChild(description);
+  pageContent.appendChild(pictureContainer);
+  pictureContainer.appendChild(picture);
+
+  return { logoContainer, descriptionContainer };
 }
 
 export default homePage;
