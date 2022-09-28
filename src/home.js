@@ -6,6 +6,7 @@ import pie from "../styles/assets/applePie.png";
 
 function homePage() {
   const pageContent = document.getElementById("page-content");
+  pageContent.setAttribute("class", "home-page-content");
 
   const logoContainer = document.createElement("div");
   logoContainer.setAttribute("id", "home-logo-container");
@@ -84,7 +85,7 @@ function homePage() {
   locationContainer.appendChild(locationTitle);
   locationContainer.appendChild(location);
 
-  return { logoContainer, descriptionContainer };
+  //return { logoContainer, descriptionContainer };
 }
 
 export default homePage;

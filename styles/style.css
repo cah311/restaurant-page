@@ -79,6 +79,8 @@
 }
 
 /* home page */
+.home-page-content {}
+
 #home-logo-contatiner {}
 
 #home-picture {
@@ -91,7 +93,33 @@
 .day-times{}
 
 
-/* global syling */
+/*menu page*/
+.menu-page-content
+
+#menu-logo-container {}
+
+#menu-page-logo {}
+
+.menu-item-container {
+    height: 70vh;
+    margin: 5vh;
+    overflow: auto;
+
+    border: 2px solid darkblue;
+}
+
+.menu-item-title{}
+
+.menu-item-img { 
+    height: 75%;
+    /* object-fit: contain; */
+}
+
+.menu-item-description {}
+
+.menu-item-price{}
+
+/* global styling */
 .long-logo {}
 
 .image-container {
