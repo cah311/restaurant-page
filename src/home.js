@@ -17,6 +17,7 @@ function homePage() {
 
   const descriptionContainer = document.createElement("div");
   descriptionContainer.setAttribute("class", "text-container");
+  descriptionContainer.setAttribute("id", "home-text-container");
 
   const description = document.createElement("p");
   description.setAttribute("class", "text");
@@ -31,6 +32,7 @@ function homePage() {
 
   const hoursContainer = document.createElement("div");
   hoursContainer.setAttribute("class", "text-container");
+  hoursContainer.setAttribute("id", "hours-container");
   const hours = document.createElement("ul");
   hours.setAttribute("id", "hours-list");
   hours.innerHTML = "Hours";
@@ -59,6 +61,7 @@ function homePage() {
 
   const locationContainer = document.createElement("div");
   locationContainer.setAttribute("class", "text-container");
+  locationContainer.setAttribute("id", "location-container");
   const locationTitle = document.createElement("h3");
   locationTitle.setAttribute("class", "text");
   locationTitle.innerHTML = "Location";

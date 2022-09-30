@@ -103,18 +103,42 @@ function clearPage() {
 }
 
 document.querySelector("#home-tab").addEventListener("click", () => {
+  const tab1 = document.getElementById("home-tab");
+  const tab2 = document.getElementById("menu-tab");
+  const tab3 = document.getElementById("contact-tab");
+
+  tab1.setAttribute("class", "page-tab-active");
+  tab2.setAttribute("class", "page-tab");
+  tab3.setAttribute("class", "page-tab");
+
   clearPage();
   homePage();
   console.log("index is working");
 });
 
 document.querySelector("#menu-tab").addEventListener("click", () => {
+  const tab1 = document.getElementById("home-tab");
+  const tab2 = document.getElementById("menu-tab");
+  const tab3 = document.getElementById("contact-tab");
+
+  tab1.setAttribute("class", "page-tab");
+  tab2.setAttribute("class", "page-tab-active");
+  tab3.setAttribute("class", "page-tab");
+
   clearPage();
   menuPage();
   console.log("index is working");
 });
 
 document.querySelector("#contact-tab").addEventListener("click", () => {
+  const tab1 = document.getElementById("home-tab");
+  const tab2 = document.getElementById("menu-tab");
+  const tab3 = document.getElementById("contact-tab");
+
+  tab1.setAttribute("class", "page-tab");
+  tab2.setAttribute("class", "page-tab");
+  tab3.setAttribute("class", "page-tab-active");
+
   clearPage();
   contactPage();
   console.log("index is working");

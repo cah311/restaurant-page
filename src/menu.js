@@ -28,7 +28,7 @@ function menuPage() {
   applePieImg.setAttribute("class", "menu-item-img");
   const applePieDescription = document.createElement("p");
   applePieDescription.setAttribute("class", "menu-item-description text");
-  applePieDescription.innerHTML = "Apple pie description";
+  applePieDescription.innerHTML = "Apple Pie description";
   const applePiePrice = document.createElement("h4");
   applePiePrice.setAttribute("class", "menu-item-price");
   applePiePrice.setAttribute("class", "text");
